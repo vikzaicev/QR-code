@@ -1,0 +1,30 @@
+.nav {
+    background-color: #9c3c3c;
+}
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.NavLink {
+    list-style: none;
+    border: 2px solid #678765;
+    border-radius: 10px;
+    margin: 10px 10px;
+    padding: 5px 10px;
+    background: #4e65c1;
+    font-size: 20px;
+    color: aqua;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.NavLink:hover {
+    background: #3a51aa;
+}
+.NavLink:active {
+    color: rgb(24, 92, 92);
+}
+a.active {
+    color: rgb(59, 56, 146);
+}

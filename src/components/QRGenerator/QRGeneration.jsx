@@ -3,7 +3,7 @@ import "./QRGenerator.css"
 import { useState } from 'react';
 
 export const QRGeneration = () => {
-    const [value, setValue] = useState('Привет')
+    const [value, setValue] = useState('')
     const [result, setResalt] = useState('')
 
     const handleBtn = (e) => {
@@ -17,9 +17,9 @@ export const QRGeneration = () => {
     }
     return (
         <div className='container'>
-            <input onChange={handleInput} value={value} type="text" />
-            <button onClick={handleBtn} type="button">Сгенерировать QR</button>
-            {result != '' && <QRCodeSVG className="qr" value={result} />}
+            <input onChange={handleInput} placeholder='Введите текст...' value={value} type="text" />
+            <button onClick={handleBtn} type="button">Сгенерировать QRcode</button>
+            {result != '' && <QRCodeSVG className="qr" value={result} size={200} />}
         </div>
     )
 }
