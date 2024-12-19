@@ -1,0 +1,14 @@
+.his__gen {
+    background-color: #d2e2a4;
+    padding: 10px;
+}
+.block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #536128;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #3fc45e;
+    margin-bottom: 10px;
+}
