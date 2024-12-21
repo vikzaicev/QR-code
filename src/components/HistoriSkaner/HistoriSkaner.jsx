@@ -1,5 +1,4 @@
 import { SCAN_DATA } from "../const"
-//import "./components/HistoriGenerator/HistoriGenerator.css"
 
 export const HistoriSkaner = () => {
     const data = JSON.parse(localStorage.getItem(SCAN_DATA) || "[]")
@@ -7,7 +6,7 @@ export const HistoriSkaner = () => {
 
     return (
         <div className="his__gen">{data.map((text, index) => (
-            <div key={index} className="">{index + 1}. {text}</div>
+            <div key={index} className="block">{index + 1}. {text}</div>
         ))}</div>
     )
 }
