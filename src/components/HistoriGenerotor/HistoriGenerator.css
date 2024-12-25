@@ -1,6 +1,7 @@
 .his__gen {
     background-color: #d2e2a4;
     padding: 10px;
+    display: block;
 }
 .block {
     display: flex;

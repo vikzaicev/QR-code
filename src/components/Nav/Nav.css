@@ -6,6 +6,10 @@ ul {
     align-items: center;
     justify-content: center;
     margin: 0;
+    padding: 0;
+    @media (max-width: 661px) {
+        flex-wrap: wrap;
+    }
 }
 .NavLink {
     list-style: none;
@@ -18,13 +22,24 @@ ul {
     color: aqua;
     cursor: pointer;
     transition: all 0.3s ease;
+    text-align: center;
+    @media (max-width: 768px) {
+        margin: 5px;
+        padding: 5px;
+    }
+    @media (max-width: 661px) {
+        min-width: 267px;
+    }
 }
+
 .NavLink:hover {
-    background: #3a51aa;
+    background: #0b1d66;
+    color: rgb(45, 170, 170);
 }
 .NavLink:active {
-    color: rgb(24, 92, 92);
+    background: #0a1b5c;
 }
 a.active {
-    color: rgb(59, 56, 146);
+    color: rgb(145, 22, 98);
+    background: #0a1b5c;
 }

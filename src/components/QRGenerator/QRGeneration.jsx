@@ -14,8 +14,6 @@ export const QRGeneration = () => {
         setResalt(value)
         setValue('')
         localStorage.setItem(GENER_DATA, JSON.stringify([...prevData, value]))
-        console.log(localStorage.setItem(GENER_DATA, JSON.stringify([...prevData, value])));
-
     }
 
     const handleInput = (e) => {
